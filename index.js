@@ -10,7 +10,7 @@ dotenv.config();
 
 // Enable CORS for multiple origins
 app.use(cors({
-    origin: ['https://taskito-planner.vercel.app', 'http://localhost:5173'], // Allow these origins
+    origin: "*", // Allow these origins
     methods: "GET,POST,PUT,DELETE",
     credentials: true, // Allow cookies & authentication headers
 }));
