@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 dotenv.config();
 
 app.use(cors({
-  origin: "https://taskito-planner.vercel.app/",  // Allow frontend origin
+  origin: "https://taskito-planner.vercel.app",  // Allow frontend origin
   methods: "GET,POST,PUT,DELETE",
   credentials: true  // Allow cookies & authentication headers
 }));

@@ -4,7 +4,6 @@ const authMiddleware = require('../middleware/authMidleware'); // Import auth mi
 const router = express.Router();
 const mongoose = require('mongoose');
 
-
 // ✅ Add a new task (Protected Route)
 router.post('/task', authMiddleware, async (req, res) => {
     try {
